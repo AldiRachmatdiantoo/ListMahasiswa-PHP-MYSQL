@@ -100,6 +100,8 @@ $mhs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <h1><?=$mahasiswa['nama']?></h1>
                 <h3><?=$mahasiswa['jurusan']?></h3>
                 <p><?=$mahasiswa['nim']?></p>
+                <a href="edit.php?nim=<?=$mahasiswa['nim']?>">Edit</a>
+                <a href="edit.php?nim">Hapus</a>
             </div>
         <?php endforeach;?>
     </ul>
